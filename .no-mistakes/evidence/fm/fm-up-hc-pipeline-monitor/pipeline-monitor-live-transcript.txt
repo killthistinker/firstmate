@@ -1,0 +1,9 @@
+Real herdr-core (hc 0.1.22) in fm-hclab-* lab session, real bin/fm-hc-pipeline-monitor.sh and bin/fm-watch.sh; fake no-mistakes (status + attach) on PATH.
+- no flag: observe rc=0, terminals [t1(worker)] only
+- flag on: observe opens t2 labels {firstmate.monitor=fm-t1, firstmate.home=<tag>, herdr.space=proj-x (worker's actual space), herdr.tab="<tag>-t1 pipeline monitor"}, argv no-mistakes attach --run run-A, no firstmate.task
+- re-observe same run x2: terminals unchanged
+- run-B: old monitor closed, new one argv attach --run run-B, exactly one monitor
+- run-B completed: no change
+- close t1: only monitor removed; foreign worker-label terminal and other-home monitor survive
+- ls failing: close rc=1 "could not list pipeline monitors", record kept; rm failing: rc=1 "could not close"; observe with ls failing refuses to open a second monitor
+- fm-watch.sh in lab home with flag: opened monitor t9 attach --run run-W in proj-x, record .hc-monitor-t1 written
