@@ -1,0 +1,19 @@
+== scope with stale row for hc window ==
+status=safe
+corrupted=0
+rows=1
+tasks=demo-hc
+unscoped=0
+-- prompt stale resolvable
+FIRSTMATE SUPERVISION WAKE: stale: default:t22 (no output for 300s)
+Task for this wake: demo-hc
+
+Handle this per your operating procedure and finish with the bin/fm-branch-report.sh command.
+-- prompt stale unresolvable endpoint (adversarial)
+FIRSTMATE SUPERVISION WAKE: stale: default:t99 (no output for 300s)
+
+Handle this per your operating procedure and finish with the bin/fm-branch-report.sh command.
+-- heartbeat (no task line expected)
+FIRSTMATE SUPERVISION WAKE: heartbeat
+
+Handle this per your operating procedure and finish with the bin/fm-branch-report.sh command.

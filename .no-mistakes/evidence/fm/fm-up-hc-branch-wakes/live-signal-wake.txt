@@ -1,0 +1,10 @@
+== signal wake naming the task status file ==
+status=safe
+corrupted=0
+rows=1
+tasks=demo-hc
+unscoped=0
+FIRSTMATE SUPERVISION WAKE: signal: /tmp/fm-wake.vyFtZX/state/demo-hc.status
+Task for this wake: demo-hc
+
+Handle this per your operating procedure and finish with the bin/fm-branch-report.sh command.
