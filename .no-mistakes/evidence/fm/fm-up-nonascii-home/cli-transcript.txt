@@ -1,0 +1,14 @@
+== base: record in Cyrillic home
+exit=1 doorbell=
+doorbell-kind: ''
+== base: record in tab-control home
+exit=1 out=''
+== base: single-quote home
+exit=1 out=''
+== head: record in Cyrillic home
+exit=0 doorbell=: Firstmate operational input waiting: read 'TMP/Рабочий стол/state/operational-inbox/1795450864-3bfc63c8f7d51b26.msg' and handle its contents as Firstmate operational input.
+doorbell-kind: 'watcher'
+== head: record in tab-control home
+exit=1 out=''
+== head: single-quote home
+exit=1 out=''
